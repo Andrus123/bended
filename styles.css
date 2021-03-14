@@ -1,0 +1,345 @@
+
+/*Esta es la pagina de prueba BENDED MEDIA*/
+
+
+@font-face {
+    font-family: 'MADESoulmaze';
+    src: url('./fonts/MADESoulmaze.eot');
+    src: url('./fonts/MADESoulmaze.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/MADESoulmaze.svg#MADESoulmaze') format('svg'),
+         url('./fonts/MADESoulmaze.ttf') format('truetype'),
+         url('./fonts/MADESoulmaze.woff') format('woff'),
+         url('./fonts/MADESoulmaze.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face{
+    font-family: 'NeuzitGrotesque';
+    src: url('./fonts/NeuzeitGro-Reg.eot');
+    src: url('./fonts/NeuzeitGro-Reg.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/NeuzeitGro-Reg.svg#NeuzitGrotesque') format('svg'),
+         url('./fonts/NeuzeitGro-Reg.ttf') format('truetype'),
+         url('./fonts/NeuzeitGro-Reg.woff') format('woff'),
+         url('./fonts/NeuzeitGro-Reg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline:0;
+}
+
+html{
+    margin-left: 0;
+    margin-right: 0;
+}
+/*Navbar and Logo*/
+h3, h2, a{
+    font-family: 'MADESoulmaze';
+    text-decoration: none;
+}
+/*Logo*/
+h3{
+    font-style: italic;
+    font-weight: 599;
+    color: crimson;
+    transition: all 200ms;
+    padding: 0.1px 4.5px 0 2.75px;
+}
+h3:hover{
+    color: white;
+    background-color: crimson;
+}
+h3:focus{
+    outline: none;
+}
+/*Logo*/
+
+/*Navbar and Logo*/
+.container, nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
+    list-style-type: none;
+}
+.nav-ul li a{
+    padding: 2px 5px;
+    color: black;
+}
+/*Navbar and Logo*/
+.nav-ul li a:hover{
+    color: white;
+    background-color: rgb(7, 6, 6);
+}
+nav .nav-ul > li > ul{
+    display: none;
+    position: absolute;
+    list-style:none;
+    z-index: 1;
+}
+nav .nav-ul > li:hover > ul{
+    display: block;
+}
+nav .nav-ul > li:hover > ul > li{
+    padding: 8px;
+    text-align: justify;
+    line-height: 5px;
+    transition: all 200ms;
+}
+
+#music:hover{
+    background-color: gold ;
+}
+#social:hover{
+    background-color: #45a1ff;
+}
+#hustle:hover{
+    background-color: green;
+}
+#trends:hover{
+    background-color: tomato;
+}
+#wellness:hover{
+    background-color:cyan;
+}
+#fitness:hover{
+    background-color: springgreen;
+}
+#steam:hover{
+    background-color: teal;
+}
+#singularity:hover{
+    background-color: darkslategray;
+}
+#swag:hover{
+    background-color: salmon;
+}
+#sneakers:hover{
+    background-color: crimson;
+}
+#gaming:hover{
+    background-color: darkmagenta;
+}
+#showtime:hover{
+    background-color: red;
+}
+button {
+    font-family: 'MADESoulmaze';
+    background-color: crimson;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+button:focus{
+    outline:none;
+}
+/*Navbar and Logo*/
+/*Spotlight animated*/
+.spotcontainer{
+    display: flex;
+    height: 20px;
+    width: 100%;
+    line-height: 20px;
+    background-color: seagreen;
+    color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.spotcontainer .title{
+    font-family: 'MADESoulmaze';
+    font-size: 12px;
+    padding-right: 5px;
+    background-color: black;
+    z-index: 1;
+    cursor:pointer;
+    padding-left:2px;
+}
+.spotcontainer .news{
+    font-family: 'MADESoulmaze';
+    text-transform: uppercase;
+    font-style: italic;
+    color: black;
+}
+.spotcontainer .sportsmini{
+    font-family: 'MADESoulmaze';
+    font-style: italic;
+    color: white;
+}
+
+.spotcontainer .spotlight p{
+    white-space: nowrap;
+}
+.spotcontainer .spotlight{
+    font-family: 'NeuzitGrotesque';
+    animation: spot 60s linear infinite;
+}
+.spotcontainer .whitespace{
+    color: transparent;
+}
+@keyframes spot{
+    0%   { transform: translate(100%, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+/*Spotlight animated*/
+
+/*End Navbar and Logo */
+
+/*Mobile Nav*/
+
+.menu{
+    padding: 0 15px;
+}
+.menu button{
+    padding: 14px 6px;
+    background: black;
+    z-index: 3;
+    position: absolute;
+    right: 13px;
+    top: -1px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: cadetblue;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.overlay-content{
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr 1.1fr;
+}
+.overlay a{
+    padding: 4px;
+    font-size: 150%;
+    display: block;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+.overlay a:hover, .overlay a:focus {
+    color: white;
+    background-color: black;
+}
+.overlay > .close:hover{
+    background: none;
+}
+
+.overlay .close {
+    position: absolute;
+    right: 15px;
+    top: -10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+/*Mobile Nav*/
+
+/*Top Card (Hero Section)*/
+.herotop{
+    width: 100%;
+    max-width: 100%;
+    background-image: url(./images/beeple-07-21-20.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.herobox{
+    margin: 100px;
+    height: 100px;
+    flex-basis: 100%;
+    position: relative;
+}
+.herobox h2{
+    color: black;
+    transition: all 200ms;
+}
+.herobox h2:hover{
+    color: white;
+}
+/*Top Card (Hero Section)*/
+
+/*Cards Section*/
+.cardsections{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    height: 48vh;
+    
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    background-color: white;
+    width: 900px;
+}
+.cards article{
+    font-family: 'NeuzitGrotesque';
+    padding: 10px;
+}
+.cards .cardbox{
+    background-color: white;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgb(163, 161, 161), 1px 1px 5px wheat;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+.cards .cardbox:hover{
+    transform: translate(-3px, -2px);
+}
+/*Cards Section*/
+
+/*Responsive Design*/
+@media screen and (max-width: 375px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .nav-ul{
+        display: none;
+    }
+    
+    .overlay-content{
+      grid-template-columns: 1fr;
+    }
+    .overlay a{
+        font-size: 20px;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+  
+    .herobox{
+        margin: 60px;
+    }
+    .herobox h2{
+        font-size: 16px;
+        padding-top: 30px;
+    }
+
+    
+  }
+  /*Responsive Design*/
