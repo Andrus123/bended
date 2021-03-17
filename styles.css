@@ -254,14 +254,6 @@ button:focus{
 /*Mobile Nav*/
 
 /*Top Card (Hero Section)*/
-.herotop1{
-    width: 100%;
-    max-width: 100%;
-    background-image: url(./images/beeple-07-21-20.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .herobox{
     margin: 100px;
     height: 100px;
@@ -275,6 +267,39 @@ button:focus{
 .herobox h2:hover{
     color: white;
 }
+.herotop1{
+    width: 100%;
+    max-width: 100%;
+    background-image: url(./images/beeple-07-21-20.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.herotop2{
+    width: 100%;
+    max-width: 100%;
+    background-image: url(./images/pascal-bernardon-zt0HWquGXlQ-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.herotop3{
+    width: 100%;
+    max-width: 100%;
+    background-image: url(./images/beeple-07-21-20.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider{
+    padding: 0;
+    display: -webkit-box;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
 /*Top Card (Hero Section)*/
 
 /*Cards Section*/
@@ -284,7 +309,7 @@ button:focus{
     flex-wrap: wrap;
     justify-content: center;
     background-color: black;
-    height: 48vh;
+    height: 47vh;
     
 }
 .cards{
