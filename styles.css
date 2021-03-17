@@ -274,6 +274,7 @@ button:focus{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-align: start;
 }
 .herotop2{
     width: 100%;
@@ -282,6 +283,7 @@ button:focus{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-align: start;
 }
 .herotop3{
     width: 100%;
@@ -290,11 +292,13 @@ button:focus{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-align: start;
 }
 .slider{
     padding: 0;
     display: -webkit-box;
-    overflow: scroll;
+    overflow-x:scroll;
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
